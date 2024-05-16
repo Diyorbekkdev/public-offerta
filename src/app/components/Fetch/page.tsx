@@ -7,7 +7,7 @@ const Fetch = () => {
   
   const fetchData = async () => {
       try {
-         const res = await fetch("http://80.90.188.12:9000/v1/public/");
+         const res = await fetch("https://backend.green-go.uz/v1/public/");
          const {text} = await res.json();
          setData(text); 
          console.log(data);
